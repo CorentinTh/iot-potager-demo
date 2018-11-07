@@ -1,0 +1,160 @@
+<br>
+<div class="container">
+
+    <div class="row">
+        <div class="col-sm">
+
+            <div class="row">
+                <div class="col-6">
+
+                    <div class="card bg-success text-white">
+                        <div class="card-body ">
+                            <div id="box-temp-sol" class="square">
+                                <p>No data</p>
+                                <p>Temp. du sol</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6">
+
+                    <div class="card bg-success text-white">
+                        <div class="card-body ">
+                            <div id="box-temp-air" class="square">
+                                <p>No data</p>
+                                <p>Temp. de l'air</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <br>
+            <div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="graph-container">
+                            <canvas id="chart-1"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="col-sm">
+            <div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="graph-container">
+                            <canvas id="chart-2"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <div class="row">
+                <div class="col-6">
+
+                    <div class="card bg-info text-white">
+                        <div class="card-body ">
+                            <div id="box-hygro-sol" class="square">
+                                <p>No data</p>
+                                <p>Hygro. du sol</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6">
+
+                    <div class="card bg-info text-white">
+                        <div class="card-body ">
+                            <div id="box-hygro-air" class="square">
+                                <p>No data</p>
+                                <p>Hygro. de l'air</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <br>
+    <div class="row">
+
+        <div class="col-3">
+
+
+            <div class="card box-action">
+                <div class="card-body">
+                    <h2 class="text-center text-success ">Actions</h2>
+                    <hr>
+                    <br>
+                    <br>
+                    <div class="switch-container">
+                        <label class="switch">
+                            <input type="checkbox" id="switch-light">
+                            <span class="slider"></span>
+                        </label>
+                        Lumière
+                    </div>
+                    <div class="switch-container">
+                        <label class="switch">
+                            <input type="checkbox" id="switch-arrosage">
+                            <span class="slider"></span>
+                        </label>
+                        Pompe
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-6">
+            <div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="graph-container">
+                            <canvas id="chart-3"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-3">
+            <div class="card bg-secondary text-white">
+                <div class="card-body ">
+                    <div id="box-luminosite" class="square">
+                        <p>No data</p>
+                        <p>Luminosite</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="card bg-secondary text-white">
+                <div class="card-body ">
+                    <div id="box-pression" class="square">
+                        <p>No data</p>
+                        <p>Pression</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<br>
+
+<script src="vendors/mqtt/mqtt.js"></script>
+<script src="javascripts/build/main.js"></script>
